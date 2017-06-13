@@ -518,6 +518,27 @@ DELIMITER;
 }
 
 
+function get_what_in_stores(){
+
+    $query = query("SELECT * FROM `categories` LIMIT 6");
+    confirm($query);
+
+
+    while($row = fetch_array($query)){
+
+        $categories = <<<DELIMITER
+
+      <li><a href="category.php?id={$row['cat_id']}">{$row['name']}</a></li>
+
+
+DELIMITER;
+
+        echo $categories;
+
+
+    }
+
+}
 
 
 ?>

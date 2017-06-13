@@ -21,11 +21,7 @@
         <div class="col-md-3 w3_footer_grid">
             <h3>what in stores</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="pet.html">Pet Food</a></li>
-                <li><a href="frozen.html">Frozen Snacks</a></li>
-                <li><a href="kitchen.html">Kitchen</a></li>
-                <li><a href="products.html">Branded Foods</a></li>
-                <li><a href="household.html">Households</a></li>
+             <?php  get_what_in_stores(); ?>
             </ul>
         </div>
         <div class="col-md-3 w3_footer_grid">
