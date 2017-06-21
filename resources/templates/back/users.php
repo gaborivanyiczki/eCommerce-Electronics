@@ -1,78 +1,49 @@
+<h1 class="page-header">
+    Utilizatori
+
+</h1>
 
 
-                    <div class="col-lg-12">
-                      
+<div class="col-md-4">
 
-                        <h1 class="page-header">
-                            Users
-                         
-                        </h1>
-                          <p class="bg-success">
-                            <?php echo $message; ?>
-                        </p>
+    <form action="" method="post">
 
-                        <a href="add_user.php" class="btn btn-primary">Add User</a>
+        <div class="form-group">
+            <label for="category-title">Username</label>
+            <input type="text" name="username" class="form-control" required>
+            <label for="category-title">E-mail</label>
+            <input type="text" name="email" class="form-control" required>
+            <label for="category-title">Password</label>
+            <input type="password" name="password" class="form-control" required>
+        </div>
 
-
-                        <div class="col-md-12">
-
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Photo</th>
-                                        <th>Username</th>
-                                        <th>First Name</th>
-                                        <th>Last Name </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                <?php foreach($users as $user): ?>
-
-                                    <tr>
-
-                                        <td>2</td>
-                                        <td><img class="admin-user-thumbnail user_image" src="placehold.it/62x62" alt=""></td>
-                                        
-                                        <td>Rico
-                                              <div class="action_links">
-
-                                                <a href="">Delete</a>
-                                                <a href="">Edit</a>
-                    
-                                                
-                                            </div>
-                                        </td>
-                                        
-                                        
-                                        <td>Edwin</td>
-                                       <td>Diaz</td>
-                                    </tr>
+        <div class="form-group">
+            <input type="submit" name="insertc" class="btn btn-primary" value="Add user">
+        </div>
 
 
-                                <?php endforeach; ?>
+    </form>
 
 
-                                    
-                                    
-                                </tbody>
-                            </table> <!--End of Table-->
-                        
-
-                        </div>
+</div>
 
 
+<div class="col-md-8">
 
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Photo</th>
+            <th>Username</th>
+            <th>E-mail</th>
+            <th>Data inregistrare</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php get_users_admin(); ?>
+        </tbody>
 
+      </table>
 
-
-
-
-
-
-                        
-                    </div>
-    
-
-
+</div>

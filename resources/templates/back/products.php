@@ -1,51 +1,25 @@
 
-             <div class="row">
+<div class="row">
 
-<h1 class="page-header">
-   All Products
+<h1 class="page-header">Toate Produsele</h1>
 
-</h1>
 <table class="table table-hover">
 
 
     <thead>
 
       <tr>
-           <th>Id</th>
-           <th>Title</th>
-           <th>Category</th>
-           <th>Price</th>
+           <th>ID</th>
+           <th>Titlu</th>
+           <th>Categorie</th>
+           <th>Subcategorie</th>
+           <th>Cantitate Stoc</th>
+           <th>Pret</th>
+           <th>Data adaugarii</th>
       </tr>
     </thead>
     <tbody>
-
-      <tr>
-            <td>20</td>
-            <td>Nikon 234 <br>
-              <img src="http://placehold.it/62x62" alt="">
-            </td>
-            <td>Category</td>
-            <td>123</td>
-        </tr>
-      
-
-
-  </tbody>
+    <?php get_products_admin();  ?>
+    </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-                
-                 
-
-
-             </div>
-
+</div>

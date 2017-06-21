@@ -9,15 +9,14 @@
 <div class="col-md-4">
     
     <form action="" method="post">
-    
+        <?php insert_category(); ?>
         <div class="form-group">
             <label for="category-title">Title</label>
-            <input type="text" class="form-control">
+            <input type="text" name="category" class="form-control" required>
         </div>
 
         <div class="form-group">
-            
-            <input type="submit" class="btn btn-primary" value="Add Category">
+            <input type="submit" name="insertc" class="btn btn-primary" value="Add Category">
         </div>      
 
 
@@ -33,17 +32,14 @@
             <thead>
 
         <tr>
-            <th>id</th>
-            <th>Title</th>
+            <th>ID</th>
+            <th>Titlu</th>
         </tr>
             </thead>
 
 
     <tbody>
-        <tr>
-            <td>20</td>
-            <td>Example Title</td>
-        </tr>
+        <?php get_categories_admin(); ?>
     </tbody>
 
         </table>

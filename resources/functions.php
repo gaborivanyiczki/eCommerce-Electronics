@@ -74,7 +74,7 @@ function get_products_home(){
                             <figure>
                                 <div class="snipcart-item block" >
                                     <div class="snipcart-thumb">
-                                        <a href="product.php?id={$row['product_id']}"><img title=" " alt=" " src="{$row['product_image']}" /></a>
+                                        <a href="product.php?id={$row['product_id']}"><img title=" " alt=" " width="200px" height="auto" src="{$row['product_image']}" /></a>
                                         <p>{$row['product_name']}</p>
                                         <h4>&#8364;{$row['product_price']}</h4>
                                     </div>
@@ -210,8 +210,8 @@ function get_products_categories(){
                                 <figure>
                                     <div class="snipcart-item block">
                                         <div class="snipcart-thumb">
-                                        <a href="product.php?id={$row['product_id']}"><img title=" " alt=" " src="{$row['product_image']}" /></a>
-                                            <p>{$row['product_name']} (5 Kg)</p>
+                                        <a href="product.php?id={$row['product_id']}"><img title=" " alt=" " width="200px" height="auto" src="{$row['product_image']}" /></a>
+                                            <p>{$row['product_name']}</p>
                                         <h4>&#8364;{$row['product_price']}</h4>
                                         </div>
                                         <div class="snipcart-details">
@@ -455,7 +455,7 @@ function get_subcategories_details(){
       
     <div class="col-md-4 w3l_banner_nav_right_banner3_btml">
                 <div class="view view-tenth">
-                    <a href="subcategory.php?id={$row['subcat_id']}"><img src="{$row['image']}" alt=" " class="img-responsive" /></a>
+                    <a href="subcategory.php?id={$row['subcat_id']}"><img src="{$row['image']}" alt="" width="320px" height="180px" /></a>
                     <div class="mask">
                         <h4>{$row['subcat_name']}</h4>
                         <p>{$row['description']}</p>

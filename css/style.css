@@ -4012,6 +4012,14 @@ ul.wmuSliderPagination {
 		margin-left: 10em;
 		width: 50%;
 	}
+
+	.responsive-image {
+
+		display: block;
+		width: ;
+		height: auto;
+	}
+
 	.wthree_banner_bottom_left {
 		width: 100%;
 	}

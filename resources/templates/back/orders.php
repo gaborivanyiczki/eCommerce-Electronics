@@ -2,7 +2,7 @@
         <div class="col-md-12">
 <div class="row">
 <h1 class="page-header">
-   All Orders
+  Toate comenzile
 
 </h1>
 </div>
@@ -12,28 +12,15 @@
     <thead>
 
       <tr>
-           <th>S.N</th>
-           <th>Title</th>
-           <th>Photo</th>
-           <th>Quantity</th>
-           <th>Invoice Number</th>
-           <th>Order Date</th>
+           <th>ID Comanda</th>
+           <th>Titlu produs</th>
+           <th>Cantitate</th>
+           <th>Data comenzii</th>
            <th>Status</th>
       </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>21</td>
-            <td>Nikon 234</td>
-
-            <td><img src="http://placehold.it/62x62" alt=""></td>
-            <td>Cameras</td>
-            <td>456464</td>
-            <td>Jun 2039</td>
-           <td>Completed</td>
-        </tr>
-        
-
+     <?php get_orders_admin(); ?>
     </tbody>
 </table>
 </div>

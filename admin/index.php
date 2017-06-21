@@ -14,10 +14,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                           Panou de control <small>Statistici</small>
+                           Panou de control <small>eCommerce Project</small>
                         </h1>
                         <ol class="breadcrumb">
-                            <li class="active">
+                            <li>
                                 <i class="fa fa-dashboard"></i> Panou de control
                             </li>
                         </ol>
@@ -73,7 +73,6 @@
             </div>
             <!-- /.container-fluid -->
 
-        </div>
         <!-- /#page-wrapper -->
 
 <?php  include (TEMPLATE_BACK . DS . "footer.php") ?>
